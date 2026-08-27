@@ -1,0 +1,8 @@
+[Unit]
+Description=nightly report
+
+# comments and blank lines must not count as drift
+
+[Service]
+Environment=REPORT_INTERVAL=21600
+Restart=on-failure

@@ -1,0 +1,6 @@
+[Unit]
+Description=collector -- installed by hand, never committed
+
+[Service]
+Type=oneshot
+ExecStart=%h/bin/collector-slot.sh

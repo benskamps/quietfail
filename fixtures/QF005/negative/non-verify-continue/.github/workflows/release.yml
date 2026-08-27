@@ -1,0 +1,9 @@
+name: release
+on: [push]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Upload coverage artifact to a flaky third party
+        run: ./scripts/upload-artifact.sh
+        continue-on-error: true

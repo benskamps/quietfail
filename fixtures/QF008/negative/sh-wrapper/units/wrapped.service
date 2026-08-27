@@ -1,0 +1,5 @@
+[Unit]
+Description=wrapped
+
+[Service]
+ExecStart=/bin/bash -c 'set -a; . /etc/env; exec /usr/bin/true'

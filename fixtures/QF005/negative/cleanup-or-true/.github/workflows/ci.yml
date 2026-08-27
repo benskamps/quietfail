@@ -1,0 +1,13 @@
+name: ci
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tear down leftovers
+        run: |
+          docker stop testdb || true
+          rm -rf .cache || true
+          pkill -f devserver || true
+      - name: Unit tests
+        run: npm test

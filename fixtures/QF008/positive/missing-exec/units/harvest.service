@@ -1,0 +1,6 @@
+[Unit]
+Description=harvest
+
+[Service]
+Type=oneshot
+ExecStart=/opt/harvester/bin/harvest --once

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quietfail"
+version = "0.2.0"
+description = "A linter for the failures that pass every check you already run."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+authors = [{ name = "Ben Schippers" }]
+keywords = ["linter", "static-analysis", "reliability", "agents", "systemd", "ci"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = []
+
+[project.scripts]
+quietfail = "quietfail.cli:main"
+
+[tool.setuptools]
+packages = ["quietfail", "quietfail.checks"]

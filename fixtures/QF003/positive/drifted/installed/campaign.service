@@ -1,0 +1,7 @@
+[Unit]
+Description=nightly report
+
+[Service]
+Environment=REPORT_INTERVAL=14400
+Restart=always
+ExecStart=/usr/bin/nightly-report.sh

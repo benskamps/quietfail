@@ -1,0 +1,5 @@
+[Unit]
+Description=tool on PATH
+
+[Service]
+ExecStart=mytool --flag

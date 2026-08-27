@@ -1,0 +1,5 @@
+[Unit]
+Description=beat
+
+[Service]
+ExecStart=/bin/echo alive

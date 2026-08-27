@@ -1,0 +1,7 @@
+Planted instances and recorded non-instances for quietfail's positive control.
+
+Every directory under <CHECK>/positive/ contains a bug the check MUST find.
+Every directory under <CHECK>/negative/ contains a lookalike it must NOT flag.
+
+This marker file makes `quietfail scan` prune this tree: a scan that reported
+quietfail's own planted bugs as findings in your estate would be lying to you.

@@ -1,0 +1,8 @@
+{
+  "name": "widget",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "vitest run --passWithNoTests",
+    "build": "tsc -p ."
+  }
+}

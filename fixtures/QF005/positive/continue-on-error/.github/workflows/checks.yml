@@ -1,0 +1,9 @@
+name: checks
+on: [push]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Type check
+        run: pytest -q
+        continue-on-error: true
